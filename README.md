@@ -1,1 +1,1 @@
-# wazzap-chat
+wazzap-chat
