@@ -12,9 +12,6 @@ local function parse_first_line(s)
   if not line then return nil end
   if line:sub(1,4) == "SYS:" then
     return {type="SYS", text=line:sub(5)}
-  elseif line:sub(1,5) == "PRIV:" then
-    local from, msg = line:sub(6):match("([^:]+):(.+)")
-    return {type="PRIV", user=from, text=msg and msg:gsub("^%s+","") or ""}
   else
     -- formats:
     -- "HH:MM:SS user: text"  (if you later add timestamps)

@@ -16,9 +16,12 @@ python3 server.py
 ```
 
 ### Client
-Update `HOST` and `PORT` in `client.py` to match the server or tunnel endpoint:
+You can pass host and port as arguments or use defaults:
 ```bash
+# default localhost:12345
 python3 client.py
+# custom
+python3 client.py <HOST> <PORT>
 ```
 
 When you start, you will see:
