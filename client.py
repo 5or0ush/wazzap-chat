@@ -1,7 +1,7 @@
 import socket, threading, sys
 
 
-print("Type messages and press Enter. Commands: /nick NAME, /msg USER text")
+print("Type messages and press Enter. Commands: /nick NAME")
 
 
 HOST = "127.0.0.1"
